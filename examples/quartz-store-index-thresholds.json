@@ -1,0 +1,17 @@
+{
+  "repo": "quartz-store-index-runner",
+  "thresholds": {
+    "signal": 3,
+    "slack": 2,
+    "confidence": 2,
+    "drag": 5,
+    "ship": 198,
+    "watch": 116
+  },
+  "terms": [
+    "index fit",
+    "join width",
+    "constraint risk",
+    "plan drift"
+  ]
+}
