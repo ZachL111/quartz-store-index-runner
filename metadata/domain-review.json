@@ -1,0 +1,73 @@
+{
+  "repo": "quartz-store-index-runner",
+  "language": "Swift",
+  "category": "Databases",
+  "goal": "Develop a Swift command-oriented project for index scenarios with transition tables, invalid-transition tests, and synthetic fixtures only.",
+  "review_model": {
+    "terms": [
+      "index fit",
+      "join width",
+      "constraint risk",
+      "plan drift"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "index fit",
+      "signal": 44,
+      "slack": 33,
+      "drag": 9,
+      "confidence": 84,
+      "score": 178,
+      "lane": "ship"
+    },
+    {
+      "name": "stress",
+      "focus": "join width",
+      "signal": 58,
+      "slack": 44,
+      "drag": 12,
+      "confidence": 54,
+      "score": 178,
+      "lane": "ship"
+    },
+    {
+      "name": "edge",
+      "focus": "constraint risk",
+      "signal": 68,
+      "slack": 32,
+      "drag": 22,
+      "confidence": 59,
+      "score": 161,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "plan drift",
+      "signal": 56,
+      "slack": 36,
+      "drag": 24,
+      "confidence": 73,
+      "score": 149,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "index fit",
+      "signal": 52,
+      "slack": 42,
+      "drag": 31,
+      "confidence": 77,
+      "score": 130,
+      "lane": "watch"
+    }
+  ]
+}
